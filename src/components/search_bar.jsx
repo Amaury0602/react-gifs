@@ -6,7 +6,7 @@ class SearchBar extends Component {
   }
 
   handleChange = (event) => {
-    console.log(event.currentTarget.value);
+    this.props.searchFunction(event.target.value);
   }
 
   render() {
